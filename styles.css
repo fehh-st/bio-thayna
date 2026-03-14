@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>🩺🐾Thayná Antoniak</title>
+</head>
+<body>
+  <div class="fundoGrad">
+    <div class="title">
+      <h1>Thayná Antoniak</h1>
+      <p>Estudante de medicina veterinária</p>
+    </div>
+  </div>
+  <div class="apresentacao1">
+    <div class="fotoPrincipal">
+      <img src="images/foto-principal.jpg" alt="">
+    </div>
+    <div class="apresentacao">
+      <p>Olá! me chamo Thayná Antoniak e aqui contarei a vocês algumas partes da minha jornada dentro da medicina veterinária!</p>
+    </div>
+  </div>
+  <div class="fundoGrad2">
+    <div class="title2">
+      <h1>Sobre Mim</h1>
+    </div>
+  
+  <div class="sobremim">
+    <img src="images/card1.jpg" alt="">
+    <p>Essa jornada se iniciou em 2025, quando utilizei minha nota do enem para ingressar na faculdade Anhembi Morumbi no meu tão sonhado curso de medicina veterinária. Desde então venho explorando cada vez mais minha paixão por essa área e principalmente pelos animais, com a ajuda de vários cursos e workshops!</p>
+  </div>
+  </div>
+  <div class="textoArea"><h1>Áreas da veterinária que mais me encantam 🐾</h1></div>
+  
+
+  <div class="areasVet">
+    <div class="cardArea reveal">
+      <div class="fotoArea"><img src="images/card2.jpg" alt=""></div>
+      <div class="textoCard"><h1>🐾Animais Silvestres</h1>
+      <p>Os animais silvestres sempre despertaram minha curiosidade e admiração. Aprender sobre seus cuidados e sobre a importância da preservação é uma forma de contribuir para o respeito e a proteção dessas espécies.</p></div>
+    </div>
+    <div class="cardArea reveal">
+      <div class="fotoArea"><img src="images/card3.jpg" alt=""></div>
+      <div class="textoCard"><h1>🔬Patologia</h1>
+      <p>A patologia me permite entender melhor como as doenças afetam os animais. Estudar esses processos é essencial para identificar problemas de saúde e ajudar a encontrar o melhor caminho para o tratamento.</p></div>
+    </div>
+    <div class="cardArea reveal">
+      <div class="fotoArea"><img src="images/card4.jpg" alt=""></div>
+      <div class="textoCard"><h1>🩺Cirurgia</h1>
+      <p>A cirurgia veterinária é uma área que exige muito cuidado, responsabilidade e dedicação. Ela representa uma oportunidade de ajudar diretamente na recuperação e no bem-estar dos animais.</p></div>
+    </div>
+  </div>
+  <div class="cuidados">
+    <h1>Dicas de cuidado com o seu pet🐶</h1>
+    </div>
+<div class="orgCards">
+
+  <div class="cardCuidados reveal">
+    <div class="fotoCuidado">
+      <img src="images/cuidados1.jpg" alt="">
+    </div>
+    <div class="textoCuidado">
+      <h1>Hidratação</h1>
+      <p>Assim como nós, os pets também precisam se manter bem hidratados para que o corpo funcione corretamente. Sempre deixe água fresca e limpa disponível para seu animal</p>
+    </div>
+  </div>
+
+  <div class="cardCuidados reveal">
+    <div class="fotoCuidado">
+      <img src="images/cuidados2.jpg" alt="">
+    </div>
+    <div class="textoCuidado">
+      <h1>Castração</h1>
+      <p>A castração é um cuidado muito importante para a saúde e o bem-estar dos pets. Além de ajudar a evitar ninhadas indesejadas, ela também pode prevenir diversas doenças e contribuir para uma vida mais longa e saudável.</p>
+    </div>
+  </div>
+
+  <div class="cardCuidados reveal">
+    <div class="fotoCuidado">
+      <img src="images/cuidados2.jpg" alt="">
+    </div>
+    <div class="textoCuidado">
+      <h1>Alimentação</h1>
+      <p>Uma boa alimentação faz toda a diferença na saúde do seu pet. Oferecer uma ração de qualidade e adequada para a idade, porte e necessidades do animal ajuda a garantir mais energia, imunidade e qualidade de vida.</p>
+    </div>
+  </div>
+</div>
+    <div class="glass-box">
+      <p>
+      Gostou do meu conteúdo? Me siga no Instagram para acompanhar mais dicas e conhecer mais da minha trajetória!
+      </p>
+      <a href="https://www.instagram.com/thaydavett_?igsh=b3JzYmhqcnV3c3hy" class="btn-instagram" target="_blank">
+      📸 Seguir no Instagram
+      </a>
+    </div>
+    <div class="rodape">
+      <footer>
+        <p>Feito com carinho.🐾</p>
+      </footer>
+    </div>
+    
+    
+    <script>
+      function reveal(){
+        const reveals = document.querySelectorAll(".reveal");
+      
+        for(let i = 0; i < reveals.length; i++){
+          let windowHeight = window.innerHeight;
+          let elementTop = reveals[i].getBoundingClientRect().top;
+          let elementVisible = 80;
+      
+          if(elementTop < windowHeight - elementVisible){
+            reveals[i].classList.add("active");
+          }
+        }
+      }
+      
+      window.addEventListener("scroll", reveal);
+    </script>
+</body>
+</html>
